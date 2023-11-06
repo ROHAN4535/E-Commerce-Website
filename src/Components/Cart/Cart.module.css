@@ -1,0 +1,38 @@
+.modal{
+    background-color: rgb(217, 226, 223);
+  }
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 0.5rem;
+    font-family:sans-serif;
+  }
+  
+  .total {
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .total h5 {
+    font-weight: bold;
+    font-family:monospace;
+    margin-left: 2rem;
+    font-size: 20px;
+    padding-right: 1rem;
+  }
+  
+  .total span{
+    margin-left: 18rem;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: monospace;
+  }
+  
+  .title{
+      font-size: 25px;
+      font-family:cursive;
+      font-weight: bold;
+  }
