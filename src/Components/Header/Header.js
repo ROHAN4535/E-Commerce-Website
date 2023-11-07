@@ -1,12 +1,10 @@
-const Header = () => {
-    const h1Style = {
-        fontFamily:"Times New Roman",
+import classes from './Header.module.css';
 
-    }
-    return (
-        <div className="bg-secondary p-5 text-center text-light">
-            <h1 style={h1Style}>The Generics</h1>
-        </div>
+const Header = () => {
+  return (
+    <div className="bg-secondary p-5 text-center text-light">
+        <h1 className={classes.h1}>The Generics</h1>
+    </div>
     )
 }
 
