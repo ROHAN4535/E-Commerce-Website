@@ -7,6 +7,7 @@ import Album4 from "../../Assets/Music/Album 4.png";
 import Tshirt from "../../Assets/Merch/Shirt.png";
 import Cofee from "../../Assets/Merch/Cofee.png";
 import CartContext from "../Context/cart-context";
+import classes from './Store.module.css';
 
 const albums = [
   {
@@ -57,17 +58,17 @@ const Store = () => {
   }
   return (
     <div>
-      <Container>
-        <h3 className="mt-4 mb-3 text-center">Music</h3>
-        <Row className="g-6">
+      <Container className={classes.container}>
+        <h3>Music</h3>
+        <Row xs={1} md={2} className="g-8">
           {albums.map((album, index) => (
             <Col key={index}>
-              <Card style={{ width: "100%" }}>
-                <Card.Header>{album.name}</Card.Header>
+              <Card className={classes.card}>
+                <Card.Header className={classes.name}>{album.name}</Card.Header>
                 <Card.Body>
-                  <Card.Img src={album.image} />
+                  <Card.Img src={album.image} className={classes.img} />
                 </Card.Body>
-                <Card.Footer>
+                <Card.Footer className={classes.footer}>
                 <div className="d-flex justify-content-between align-items-center">
                   <span>${album.price.toFixed(2)}</span>
                   <Button variant="primary" onClick={() => addToCartHandler(album)}>Add To Cart</Button>
@@ -79,17 +80,17 @@ const Store = () => {
         </Row>
       </Container>
 
-      <Container >
-        <h3 className="mt-4 mb-3 text-center">Merch</h3>
-        <Row className="g-6">
+      <Container className={classes.container}>
+        <h3>Merch</h3>
+        <Row xs={1} md={2} className="g-8">
           {merchs.map((merch, index) => (
             <Col key={index}>
-              <Card style={{ width: "50%" }}>
-                <Card.Header>{merch.name}</Card.Header>
+              <Card className={classes.card}>
+              <Card.Header className={classes.name}>{merch.name}</Card.Header>
                 <Card.Body>
                   <Card.Img src={merch.image} />
                 </Card.Body>
-                <Card.Footer>
+                <Card.Footer className={classes.img}>
                 <div className="d-flex justify-content-between align-items-center">
                   <span>${merch.price.toFixed(2)}</span>
                   <Button variant="primary" onClick={() => addToCartHandler(merch)}>Add To Cart</Button>

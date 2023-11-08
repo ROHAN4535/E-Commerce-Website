@@ -2,7 +2,7 @@ import classes from './Header.module.css';
 
 const Header = () => {
   return (
-    <div className="bg-secondary p-5 text-center text-light">
+    <div className={classes.container}>
         <h1 className={classes.h1}>The Generics</h1>
     </div>
     )
