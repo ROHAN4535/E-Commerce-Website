@@ -102,7 +102,7 @@ const Store = () => {
         </Row>
       </Container>
       <div className="text-center">
-      <Button variant="outline-info" className=" my-4 ms-5">See the cart</Button>
+      <Button variant="secondary" className={classes.seeCartBtn}>See the cart</Button>
       </div>
     </div>
   );
