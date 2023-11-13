@@ -3,7 +3,7 @@ import Cart from "../Cart/Cart";
 import { NavLink } from "react-router-dom";
 import classes from './Navbar.module.css';
 
-const Header = () => {
+const NavBar = () => {
   return (
     <div>
       <Navbar bg="dark" expand="sm" variant="dark">
@@ -37,4 +37,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavBar;
