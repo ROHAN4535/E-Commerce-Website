@@ -23,9 +23,9 @@
 .card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.name {
-    font-size: 18px;
-    font-weight: bold;
+.title{
+    color:black;
+    text-align: center;
 }
 .img {
     height: 250px; /* Adjust the height of the image as per your requirement */
