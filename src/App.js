@@ -6,9 +6,11 @@ import CartProvider from "./Components/Context/CartProvider";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RootLayout from "./Components/Layout/Root";
 import Product from "./Components/Store/Product";
+import Login from "./Components/Login/Login";
 
 const productsArr = [
   {
+    id: '1',
     title: "Album 1",
     price: 100,
     imageUrl: [
@@ -20,6 +22,7 @@ const productsArr = [
   },
 
   {
+    id: '2',
     title: "Album 2",
     price: 50,
     imageUrl: [
@@ -29,6 +32,7 @@ const productsArr = [
   },
 
   {
+    id: '3',
     title: "Album 3",
     price: 70,
     imageUrl: [
@@ -38,6 +42,7 @@ const productsArr = [
   },
 
   {
+    id: '4',
     title: "Album 4",
     price: 100,
     imageUrl: [
@@ -71,6 +76,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="store" element={<Store productsArr={productsArr}/>} />
             <Route path="about" element={<About />} />
+            <Route path="login" element={<Login/>} />
             <Route path="contact" element={<ContactUs />} />
             <Route
               path="store/:productId"

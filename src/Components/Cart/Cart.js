@@ -76,9 +76,10 @@ const Cart = () => {
             <ul>
               {cartCntx.items.map((cart, idx) => (
                 <CartItems
+                  key={idx}
                   id={idx}
-                  image={cart.image}
-                  name={cart.name}
+                  image={cart.imageUrl[0]}
+                  name={cart.title}
                   price={cart.price}
                   quantity={cart.quantity}
                 />

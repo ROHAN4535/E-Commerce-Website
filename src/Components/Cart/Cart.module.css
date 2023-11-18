@@ -1,38 +1,51 @@
-.modal{
-  background-color: rgb(217, 226, 223);
-}
-.heading {
+.list {
   display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-  font-size: 20px;
-  padding-bottom: 0.5rem;
-  font-family:sans-serif;
-}
-
-.total {
-  display:inline-flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
-.total h5 {
+
+.list img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 5px;
+}
+
+.name {
+  font-size: 16px;
   font-weight: bold;
-  font-family:monospace;
-  margin-left: 2rem;
-  font-size: 20px;
-  padding-right: 1rem;
 }
 
-
-.total span{
-  margin-left: 18rem;
-  font-weight: 600;
-  font-size: 20px;
-  font-family: monospace;
+.price {
+  font-size: 16px;
 }
 
-.title{
-    font-size: 25px;
-    font-family:cursive;
-    font-weight: bold;
+.list input {
+  width: 10%;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 40px;
+  text-align: center;
+  background-color: #ccc;
+  border-color: #2c9296;
+}
+
+.remove-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #c82333;
+}
+
+.remove-button:focus {
+  outline: none;
 }
