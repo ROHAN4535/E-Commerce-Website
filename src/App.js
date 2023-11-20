@@ -3,10 +3,12 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import ContactUs from "./Components/Contact/ContactUs";
 import CartProvider from "./Components/Context/CartProvider";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import RootLayout from "./Components/Layout/Root";
 import Product from "./Components/Store/Product";
 import Login from "./Components/Login/Login";
+import { useContext } from "react";
+import AuthContext from "./Components/Context/auth-context";
 
 const productsArr = [
   {
@@ -55,6 +57,7 @@ const productsArr = [
 
 
 function App() {
+  const authCtx = useContext(AuthContext);
   // const router = createBrowserRouter([
   //   {
   //     path: "/",
@@ -74,7 +77,16 @@ function App() {
         <Routes>
           <Route path="/" element={<RootLayout />}>
             <Route index element={<Home />} />
-            <Route path="store" element={<Store productsArr={productsArr}/>} />
+            <Route
+              path="store"
+              element={
+                authCtx.isLoggedIn ? (
+                  <Store productsArr={productsArr} />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
             <Route path="about" element={<About />} />
             <Route path="login" element={<Login/>} />
             <Route path="contact" element={<ContactUs />} />
