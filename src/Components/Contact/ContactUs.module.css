@@ -1,14 +1,16 @@
-.title{
+.title {
     text-align: center;
     margin-top: 15px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
     font-size: 30px;
     font-weight: bold;
 
 }
-.form{
+
+.form {
     max-width: 400px;
-    margin:  30px;
+    margin: 30px;
     margin-left: 36%;
     padding: 20px;
     border: 1px solid #815252;
@@ -16,22 +18,19 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
-.form input{
+.form input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-
-
 }
-.form label{
-    display: block;
 
+.form label {
+    display: block;
     font-weight: bold;
 }
 
-.form button{
+.form button {
     display: block;
     width: 100%;
     padding: 10px;
@@ -42,9 +41,16 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
 }
 
-form button:hover{
+form button:hover {
     background-color: #0056b3;
 }
+
+.successMsg {
+    color: rgb(26, 177, 26);
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+  
+}  

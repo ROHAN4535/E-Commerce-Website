@@ -11,6 +11,7 @@ const Product = (props) => {
   }
 
   const product = prod[0];
+  console.log(product)
   return (
     <div className={classes.sec}>
       <h1>Product Details </h1>

@@ -5,6 +5,7 @@
     flex-direction: column;
     text-align: center;
 }
+
 .sec h1{
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -12,6 +13,7 @@
     font-weight: bold;
     padding: 10px;
 }
+
 .sectop{
     border: 1px solid rgb(199, 188, 188);
     background-color: aliceblue;
@@ -23,11 +25,16 @@
     font-family: cursive;
     color: rgb(148, 138, 156);
 }
+
 .image{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
+    padding-left: 15rem;
+
+}
+
+.image img{
+    width: 400px;
 }
 
 .image li{
@@ -44,6 +51,7 @@
 }
 .details span{
     padding: 5px;
+    font-weight: 500;
 }
 
 .review{
